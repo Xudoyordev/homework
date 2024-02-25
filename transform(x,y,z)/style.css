@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box .main-card {
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+}
+.box .card {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  animation: square 5s linear infinite;
+}
+
+@keyframes square {
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+  0% {
+    transform: translateX(-100px);
+  }
+}
+
+.box .card1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(11, 247, 66);
+  animation: square1 5s linear infinite;
+}
+
+@keyframes square1 {
+    50% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(-100px);
+    }
+    0% {
+      transform: translateY(-100px);
+    }
+  }
+
+
+.box .card2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(75, 0, 235);
+  animation: square2 5s linear infinite;
+}
+
+
+@keyframes square2 {
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+    0% {
+        transform: scale(0.8);
+    }
+  }
